@@ -1,0 +1,85 @@
+﻿<html>
+	<head>
+	 <title>Book</title>
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	 <script type="text/javascript">
+		$(document).ready(function(){
+		 
+		$(window).scroll(function(){
+		if ($(this).scrollTop() > 250) {
+		$('.scrollup').fadeIn();
+		} else {
+		$('.scrollup').fadeOut();
+		}
+		});
+		 
+		$('.scrollup').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 600);
+		return false;
+		});
+		 
+		});
+	 </script>
+	 <link rel="stylesheet" type="text/css" href="bootstrap\css\bootstrap.css">
+	 <link rel="stylesheet" type="text/css" href="style.css">
+	 
+	</head>
+	<body>
+	<div id = "main">
+	 <a id = "logo" class = "hidden-xs" href = "https://about.me/nurali"> </a>
+	
+	 <nav id = "menu">
+		<ul>
+			<li class = "active">
+			<a href = "./ch1/syllabus.html" title ="Глава 1" class="load_link">
+			<span class="glyphicon glyphicon-book"></span>
+			ГЛАВА 1</a>
+			</li>
+			<!-- <li>
+			<a href = "./ch2/syllabus.html" title ="ГЛАВА 2" class="load_link">
+			<span class="glyphicon glyphicon-book"></span>
+			ГЛАВА 2</a>
+			</li>
+			<li>
+			<a href = "./ch3/syllabus.html" title ="ГЛАВА 3" class="load_link">
+			<span class="glyphicon glyphicon-book"></span>
+			ГЛАВА 3</a>
+			</li> -->
+			<!-- <li>
+			<a href = "./others/implementation.htm" title ="Implementation Table" class="load_link" style="font-size: 12px;">
+			<span class="glyphicon glyphicon-th"></span>
+			Implementation Table</a>
+			</li>
+			<li>
+			<a href = "./others/sources.htm" title ="Reading Sources" class="load_link">
+			<span class="glyphicon glyphicon-list-alt"></span>
+			Reading Sources</a>
+			</li> -->
+			<li>
+			<a href = "./others/author.htm" title ="Об Авторе" class="load_link">
+			<span class="glyphicon glyphicon-user"></span>
+			Об Авторе</a>
+			</li>
+		</ul>
+	 </nav>
+	<header>
+		<h1>Прототип Книги<br /><span style="font-size: 18px;">(Academic-Methodical Hand Book)</span></h1>
+	</header>
+	<div class = "container">
+		<span id ="navbar_container"></span>
+		<span id ="sub_navbar_container"></span>
+		<div id = "page">
+		
+		</div>
+		<script>
+			$(function(){
+		  		$("#page").load("./ch1/syllabus.html"); 
+		  		$("#navbar_container").load("./ch1/navbar.html"); 
+			});
+		</script>
+		<script src=".\script.js"></script> 		
+	</div>
+	</div>
+	<a href="#" class="scrollup">Наверх</a>
+	</body>
+</html>

@@ -1,0 +1,236 @@
+body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	overflow-x: hidden;
+	font-family: "Open Sans",HelveticaNeueCyrMedium,Helvetica;
+	font-size: 16px;
+	color: #fff;
+}
+
+header {
+    display: block;
+    position: relative;
+    height: 100px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.06);
+    background-position: center top;
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+    margin: 0px;
+    padding: 33px 0px 0px 130px;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+p {
+    margin-left: 20px;
+}
+
+#main {
+	max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+}
+
+#logo {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100px;
+    height: 100px;
+    z-index: 105;
+    background-image: url("images/logo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 72px;
+}
+
+#menu {
+	background-color: rgba(0, 0, 0, 0.06);
+	min-height: 100%;
+	width: 100px;
+	float: left;
+	padding: 100px 0px 0px 0px;
+	position: fixed;
+	z-index: 101;
+	transition: all 0.5s ease 0s;
+}
+
+#menu ul {
+	display: block;
+    min-height: 100%;
+    list-style: outside none none;
+    margin: 0px;
+    padding:  0px 0px 70px;
+}
+
+#menu ul > li {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    min-height: 80px;
+    text-align: center;
+}
+
+#menu ul > li > a {
+    display: block;
+    padding: 12px 7px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+}
+#menu ul > li.active {
+    background-color: #8B7D6B;
+}
+
+#menu ul > li > a:hover, #menu ul > li.active > a {
+    color: #18e6ff;
+}
+
+#menu ul > li > a > span {
+    display: block;
+    width: 40px;
+    font-size: 30px;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+[class*=" icon-"] {
+    font-family: "icomoon" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+
+#navbar {
+  margin-top: 15px;
+  padding: 2px;
+  list-style-type: none;
+  
+  border-radius: 2px;
+  width: 100%;
+  text-align: left;
+}
+
+#navbar ul { 
+	padding: 0px;
+	border-bottom: 2px solid;
+}
+
+#navbar li { 
+	
+	display: inline; 
+}
+
+#navbar a {
+  color: #fff;
+  padding: 5px 10px;
+  margin-top: 5px;
+  text-decoration: none;
+  display: inline-block;
+  width: 100px;
+}
+#navbar a:hover, #navbar ul >  li.active > a{
+  border-radius: 2px;
+  color: #007A53;
+  background-color: #fff;
+}
+
+
+
+#page{
+	padding: 0px;
+	margin: 40px;
+	background-color: transparent;
+	transition: all 0.5s ease 0s;
+}
+
+#page ul{
+	padding: 0px;
+	border-bottom: 0px solid;
+}
+
+#page li{
+	display:list-item; 
+	text-indent: 40px;
+}
+
+ p{
+	 text-indent: 30px;
+}
+
+a.button {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+} 
+a.button:hover { background: rgb(53, 167, 110); }
+a.button:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.scrollup{
+width:40;
+height:40;
+opacity:0.4;
+position:fixed;
+bottom:70px;
+right:40px;
+text-indent:-9999px;
+background: url('images/top.png') no-repeat;
+}
+
+.button{
+background-color: rgba(0, 0, 0, 0.06);
+    border: none;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+table {
+	width: 65%;
+	 margin: auto;
+  border-collapse: collapse;
+  border: 2px solid;
+  border-radius: 5px;
+  
+}
+th{
+	padding: 10px;
+	border-bottom: 2px solid;
+}
+td {
+  padding: 10px;
+}
+tr:nth-child(odd) {
+  
+}
+tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.06);
+}
